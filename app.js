@@ -85,8 +85,8 @@ const updateTasksList = () => {
                     <p>${task.text}</p>
                 </div>
                 <div class="icons"> 
-                    <img src="./images/edit.png" onClick="editTask(${index})"/>
-                    <img src="./images/bin.png" onClick="deleteTask(${index})"/>
+                    <img src="./media/edit.png" alt="Edit" onClick="editTask(${index})"/>
+                    <img src="./media/bin.png" alt="Delete" onClick="deleteTask(${index})"/>
                 </div>
         </div>
         `;
@@ -99,3 +99,4 @@ document.getElementById('submit').addEventListener('click', function(e) {
     e.preventDefault();
     addtask();
 });
+
